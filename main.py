@@ -12,5 +12,8 @@ for round in range(3):
     elif coinToss == 2:
         print("Round", round, ": Tails")
         numOfTail += 1
-
+if numOfHead > numOfTail:
+    print("You won!")
+else:
+    print("You lost!")
 print("Heads: ", numOfHead, ", Tails: ", numOfTail)
